@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "buildCommand": "npm install && npm run build",
+  "outputDirectory": "build",
+  "env": {
+    "REACT_APP_ARC_TOKEN_ADDRESS": "@arc_token_address",
+    "REACT_APP_PAYMENT_PROCESSOR_ADDRESS": "@payment_processor_address",
+    "REACT_APP_API_URL": "@api_url"
+  }
+}

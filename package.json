@@ -1,0 +1,23 @@
+{
+  "name": "arc-payment-platform",
+  "version": "1.0.0",
+  "description": "Web3 Payment Platform for Arc Layer 1 Blockchain",
+  "private": true,
+  "workspaces": [
+    "contracts",
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "install-all": "npm install && cd contracts && npm install && cd ../frontend && npm install && cd ../backend && npm install",
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend start\"",
+    "contracts:compile": "cd contracts && npm run compile",
+    "contracts:deploy": "cd contracts && npm run deploy",
+    "frontend:start": "npm --prefix frontend start",
+    "backend:start": "npm --prefix backend start",
+    "backend:dev": "npm --prefix backend run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

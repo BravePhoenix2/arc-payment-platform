@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/server.js"
+    }
+  ],
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "ARC_RPC_URL": "@arc_rpc_url",
+    "ARC_TOKEN_ADDRESS": "@arc_token_address",
+    "PAYMENT_PROCESSOR_ADDRESS": "@payment_processor_address",
+    "NODE_ENV": "production"
+  }
+}

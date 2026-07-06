@@ -1,0 +1,21 @@
+{
+  "name": "arc-payment-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for Arc Payment Platform",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network arc-testnet"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0",
+    "hardhat": "^2.14.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "chai": "^4.3.7"
+  }
+}
